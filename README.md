@@ -36,4 +36,4 @@ The program asks for user input.
 
 The temperature is classified using simple if-elif conditions.
 
-A custom weather description is displayed.# Aiml-Project
+A custom weather description is displayed.
