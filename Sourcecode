@@ -1,0 +1,33 @@
+def get_weather_description(temp):
+    if temp < 0:
+        return "Freezing Cold "
+    elif 0 <= temp < 10:
+        return "Very Cold "
+    elif 10 <= temp < 20:
+        return "Cool "
+    elif 20 <= temp < 30:
+        return "Warm "
+    
+    elif 30 <= temp < 40:
+        return "Hot "
+    else:
+        return "Extremely Hot anil" \
+    
+
+print("=== Simple Weather App ===")
+
+name = input("Enter your name: ")
+city = input("Enter your city: ")
+
+try:
+    temp = float(input("Enter the temperature (°C): "))
+    condition = get_weather_description(temp)
+
+    print("\n--- Weather Report ---")
+    print(f"Hello {name}!")
+    print(f"City: {city}")
+    print(f"Temperature: {temp}°C")
+    print(f"Weather Condition: {condition}")
+
+except ValueError:
+    print("Invalid temperature! Please enter a number.")
